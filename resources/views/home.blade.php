@@ -25,7 +25,7 @@
         <li>下関</li>
         <li>若松</li>
         <li>芦屋</li>
-        <li>福岡</li>
+        <li><a href="{{ route('fukuoka.index') }}">福岡</li>
         <li>唐津</li>
         <li>大村</li>
     </ul>

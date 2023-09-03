@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRacesTable extends Migration
+class CreateRacesInfoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class CreateRacesTable extends Migration
      */
     public function up()
     {
-        Schema::create('races', function (Blueprint $table) {
-            $table->id('race_id');
+        Schema::create('races_info', function (Blueprint $table) {
+            $table->id('race_info_id');
             $table->string('race_name');
             $table->date('race_date');
             $table->string('race_location');

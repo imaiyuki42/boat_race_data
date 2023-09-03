@@ -23,7 +23,7 @@ use App\Http\Controllers\TokuyamaController;
 use App\Http\Controllers\SimonosekiController;
 use App\Http\Controllers\WakamatsuController;
 use App\Http\Controllers\AshiyaController;
-use App\Http\Controllers\HukuokaController;
+use App\Http\Controllers\FukuokaController;
 use App\Http\Controllers\KaratusController;
 use App\Http\Controllers\OmuraController;
 
@@ -89,7 +89,7 @@ Route::get('/wakamatsu', [WakamatsuController::class, 'index'])->name('wakamatsu
 //芦屋
 Route::get('/ashiya', [AshiyaController::class, 'index'])->name('ashiya.index');
 //福岡
-Route::get('/hukuoka', [HukuokaController::class, 'index'])->name('hukuoka.index');
+Route::get('/fukuoka', [FukuokaController::class, 'index'])->name('fukuoka.index');
 //唐津
 Route::get('/karatus', [KaratusController::class, 'index'])->name('karatus.index');
 //大村

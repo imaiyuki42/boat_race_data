@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HukuokaController extends Controller
+class FukuokaController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('fukuoka');
+    }
 }
