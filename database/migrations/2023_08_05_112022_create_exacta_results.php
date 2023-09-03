@@ -14,7 +14,14 @@ class CreateExactaResults extends Migration
     public function up()
     {
         Schema::create('exacta_results', function (Blueprint $table) {
-            $table->id();
+            $table->id('exacta_results_id');
+            $table->integer('exacta_first');
+            $table->integer('exacta_second');
+            $table->integer('refund_price');
+            $table->integer('rank');
+            $table->date('race_date');
+            $table->integer('race_location_id');
+            $table->integer('race_number');
             $table->timestamps();
         });
     }

@@ -14,7 +14,15 @@ class CreateTrifectaResults extends Migration
     public function up()
     {
         Schema::create('trifecta_results', function (Blueprint $table) {
-            $table->id();
+            $table->id('trifecta_results_id');
+            $table->integer('trifecta_first');
+            $table->integer('trifecta_second');
+            $table->integer('trifecta_third');
+            $table->integer('refund_price');
+            $table->integer('rank');
+            $table->date('race_date');
+            $table->integer('race_location_id');
+            $table->integer('race_number');
             $table->timestamps();
         });
     }
