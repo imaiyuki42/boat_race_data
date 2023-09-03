@@ -24,7 +24,7 @@ use App\Http\Controllers\SimonosekiController;
 use App\Http\Controllers\WakamatsuController;
 use App\Http\Controllers\AshiyaController;
 use App\Http\Controllers\FukuokaController;
-use App\Http\Controllers\KaratusController;
+use App\Http\Controllers\KaratsuController;
 use App\Http\Controllers\OmuraController;
 
 
@@ -83,7 +83,7 @@ Route::get('/miyajima', [MiyajimaController::class, 'index'])->name('miyajima.in
 //徳山
 Route::get('/tokuyama', [TokuyamaController::class, 'index'])->name('tokuyama.index');
 //下関
-Route::get('/simonoseki', [SimonosekiController::class, 'index'])->name('simonoseki.index');
+Route::get('/shimonoseki', [SimonosekiController::class, 'index'])->name('shimonoseki.index');
 //若松
 Route::get('/wakamatsu', [WakamatsuController::class, 'index'])->name('wakamatsu.index');
 //芦屋
@@ -91,6 +91,6 @@ Route::get('/ashiya', [AshiyaController::class, 'index'])->name('ashiya.index');
 //福岡
 Route::get('/fukuoka', [FukuokaController::class, 'index'])->name('fukuoka.index');
 //唐津
-Route::get('/karatus', [KaratusController::class, 'index'])->name('karatus.index');
+Route::get('/karatsu', [KaratsuController::class, 'index'])->name('karatsu.index');
 //大村
 Route::get('/omura', [OmuraController::class, 'index'])->name('omura.index');

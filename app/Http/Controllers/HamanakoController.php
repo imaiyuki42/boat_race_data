@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class HamanakoController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('hamanako');
+    }
 }

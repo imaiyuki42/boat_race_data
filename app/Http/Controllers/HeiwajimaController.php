@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class HeiwajimaController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('heiwajima');
+    }
 }

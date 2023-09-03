@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class TsuController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('tsu');
+    }
 }

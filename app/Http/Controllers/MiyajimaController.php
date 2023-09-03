@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class MiyajimaController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('miyajima');
+    }
 }
