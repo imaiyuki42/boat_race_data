@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             RaceInfoSeeder::class,
+            RaceLocationSeeder::class
         ]);
     }
 }

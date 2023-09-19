@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DataCreateController;
+
 use App\Http\Controllers\KiryuController;
 use App\Http\Controllers\TodaController;
 use App\Http\Controllers\EdogawaController;
@@ -43,8 +45,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
 //TOP画面表示
 Route::get('/home', [HomeController::class, 'index'])->name('home.index');
+
+//レースデータ登録画面
+Route::get('/data_create', [DataCreateController::class, 'index'])->name('data_create.index');
 
 //桐生
 Route::get('/kiryu', [KiryuController::class, 'index'])->name('kiryu.index');

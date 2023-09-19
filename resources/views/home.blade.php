@@ -1,5 +1,7 @@
 <h1>ボートレースデータベース</h1>
 
+<p><a href="{{ route('data_create.index') }}">レースデータ登録</a></p>
+
 
 <img src="{{ asset('images/boat_race_1.jpg') }}" alt="ボートレース">
 <div class="home__wrapper">
