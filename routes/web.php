@@ -50,8 +50,10 @@ Route::get('/', function () {
 //TOP画面表示
 Route::get('/home', [HomeController::class, 'index'])->name('home.index');
 
-//レースデータ登録画面
+//レースデータ登録画面表示
 Route::get('/data_create', [DataCreateController::class, 'index'])->name('data_create.index');
+//レースデータ登録画面表示
+Route::post('/data_create', [DataCreateController::class, 'store'])->name('data_create.store');
 
 //桐生
 Route::get('/kiryu', [KiryuController::class, 'index'])->name('kiryu.index');

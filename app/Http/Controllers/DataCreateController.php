@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\RaceResult;
 
 class DataCreateController extends Controller
 {
@@ -16,5 +17,25 @@ class DataCreateController extends Controller
         ];
 
         return view('data_create', compact('race_locations'));
+    }
+
+    public function store(Request $request)
+    {
+        RaceResult::create([
+            'race_date' => $request->race_date,
+            'race_number' => $request->race_number,
+            'race_location_id' => $request->race_location,
+            'exacta_first' => $request->exacta_first,
+            'exacta_second' => $request->exacta_second,
+            'exacta_refund_price' => $request->exacta_refund_price,
+            'exacta_rank' => $request->exacta_rank,
+            'trifecta_first' => $request->trifecta_first,
+            'trifecta_second' => $request->trifecta_second,
+            'trifecta_third' => $request->trifecta_third,
+            'trifecta_refund_price' => $request->trifecta_refund_price,
+            'trifecta_rank' => $request->trifecta_rank,
+        ]);
+
+       return redirect()->route('home.index');
     }
 }
