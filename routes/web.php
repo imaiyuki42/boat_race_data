@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\DataCreateController;
+use App\Http\Controllers\RaceDataCreateController;
+use App\Http\Controllers\RaceNameCreateController;
 
 use App\Http\Controllers\KiryuController;
 use App\Http\Controllers\TodaController;
@@ -51,9 +52,14 @@ Route::get('/', function () {
 Route::get('/home', [HomeController::class, 'index'])->name('home.index');
 
 //レースデータ登録画面表示
-Route::get('/data_create', [DataCreateController::class, 'index'])->name('data_create.index');
+Route::get('/racedata_create', [RaceDataCreateController::class, 'index'])->name('racedata_create.index');
 //レースデータ登録画面表示
-Route::post('/data_create', [DataCreateController::class, 'store'])->name('data_create.store');
+Route::post('/racedata_create', [RaceDataCreateController::class, 'store'])->name('racedata_create.store');
+
+//レースデータ登録画面表示
+Route::get('/racename_create', [RaceNameCreateController::class, 'index'])->name('racename_create.index');
+//レースデータ登録画面表示
+Route::post('/racename_create', [RaceNameCreateController::class, 'store'])->name('racename_create.store');
 
 //桐生
 Route::get('/kiryu', [KiryuController::class, 'index'])->name('kiryu.index');

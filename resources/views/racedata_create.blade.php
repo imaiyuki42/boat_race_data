@@ -5,7 +5,7 @@
 @endcomponent
 
 <!-- レースデータ登録画面フォーム -->
-<form action="{{ route('data_create.store') }}" method="POST">
+<form action="{{ route('racedata_create.store') }}" method="POST">
     @csrf
     <label for="">レース日</label>
     <input type="text" id="datepicker" name="race_date">
@@ -74,3 +74,5 @@
     <input type="text" name="trifecta_rank">
     <button type="submit">登録</button>
 </form>
+
+<a href="{{ route('home.index') }}">戻る</a>

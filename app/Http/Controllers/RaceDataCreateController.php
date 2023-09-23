@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\RaceResult;
 use App\Http\Requests\StoreDataCreateRequest;
 
-class DataCreateController extends Controller
+class RaceDataCreateController extends Controller
 {
     /**レースデータ登録画面表示 */
     public function index()
@@ -18,7 +18,7 @@ class DataCreateController extends Controller
             '19' => '下関', '20' =>'若松', '21' =>'芦屋', '22' =>'福岡', '23' =>'唐津', '24' =>'大村'
         ];
 
-        return view('data_create', compact('race_locations'));
+        return view('racedata_create', compact('race_locations'));
     }
 
     /**入力したレースデータをデータベースに保存 */
