@@ -1,5 +1,10 @@
 <h1>レースデータ登録</h1>
 
+@component('components.validation_message')
+
+@endcomponent
+
+<!-- レースデータ登録画面フォーム -->
 <form action="{{ route('data_create.store') }}" method="POST">
     @csrf
     <label for="">レース日</label>

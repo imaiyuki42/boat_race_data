@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\RaceResult;
+use App\Http\Requests\StoreDataCreateRequest;
 
 class DataCreateController extends Controller
 {
+    /**レースデータ登録画面表示 */
     public function index()
     {
         $race_locations = [
@@ -19,7 +21,8 @@ class DataCreateController extends Controller
         return view('data_create', compact('race_locations'));
     }
 
-    public function store(Request $request)
+    /**入力したレースデータをデータベースに保存 */
+    public function store(StoreDataCreateRequest $request)
     {
         RaceResult::create([
             'race_date' => $request->race_date,
