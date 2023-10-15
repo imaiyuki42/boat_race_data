@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Locale;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class HamanakoController extends Controller
 {
     public function index()
     {
-        return view('hamanako');
+        return view('locale.hamanako');
     }
 }

@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Locale;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class FukuokaController extends Controller
 {
     public function index()
     {
-        return view('fukuoka');
+        return view('locale.fukuoka');
     }
 }

@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Locale;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class TokuyamaController extends Controller
 {
     public function index()
     {
-        return view('tokuyama');
+        return view('locale.tokuyama');
     }
 }
