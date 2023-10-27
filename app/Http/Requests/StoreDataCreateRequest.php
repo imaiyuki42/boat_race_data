@@ -29,13 +29,13 @@ class StoreDataCreateRequest extends FormRequest
             'race_location' => ['required'],
             'exacta_first' => ['required'],
             'exacta_second' => ['required'],
-            'exacta_refund_price' => ['required','numeric','max:7'],
-            'exacta_rank' => ['required','numeric','max:3'],
+            'exacta_refund_price' => ['required','numeric'],
+            'exacta_rank' => ['required','numeric'],
             'trifecta_first' => ['required'],
             'trifecta_second' => ['required'],
             'trifecta_third' => ['required'],
-            'trifecta_refund_price' => ['required','numeric','max:7'],
-            'trifecta_rank' => ['required','numeric','max:3'],
+            'trifecta_refund_price' => ['required','numeric'],
+            'trifecta_rank' => ['required','numeric'],
         ];
     }
 
