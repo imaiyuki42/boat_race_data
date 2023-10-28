@@ -16,6 +16,8 @@ class CreateRaceNames extends Migration
         Schema::create('race_names', function (Blueprint $table) {
             $table->id('race_name_id');
             $table->string('race_name');
+            $table->date('start_date');
+            $table->string('grade');
             $table->integer('race_location_id');
             $table->timestamps();
         });
