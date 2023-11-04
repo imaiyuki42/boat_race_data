@@ -15,6 +15,7 @@ class CreateRaceResults extends Migration
     {
         Schema::create('race_results', function (Blueprint $table) {
             $table->id('race_results_id');
+            $table->string('race_name');
             $table->date('race_date');
             $table->integer('race_number');
             $table->integer('race_location_id');

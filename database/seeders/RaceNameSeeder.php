@@ -17,19 +17,49 @@ class RaceNameSeeder extends Seeder
         $racename_data = [
             [
                 'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
-                'start_date' => '2023-06-01',
+                'race_date' => '2023-06-01',
+                'grade' => 'G1',
+                'race_location_id' => '7'
+            ],
+            [
+                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
+                'race_date' => '2023-06-02',
+                'grade' => 'G1',
+                'race_location_id' => '7'
+            ],
+            [
+                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
+                'race_date' => '2023-06-03',
+                'grade' => 'G1',
+                'race_location_id' => '7'
+            ],
+            [
+                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
+                'race_date' => '2023-06-04',
+                'grade' => 'G1',
+                'race_location_id' => '7'
+            ],
+            [
+                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
+                'race_date' => '2023-06-05',
+                'grade' => 'G1',
+                'race_location_id' => '7'
+            ],
+            [
+                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
+                'race_date' => '2023-06-06',
                 'grade' => 'G1',
                 'race_location_id' => '7'
             ],
             [
                 'race_name' => 'オールジャパン竹島特別開設６７周年記念競走',
-                'start_date' => '2022-04-10',
+                'race_date' => '2022-04-10',
                 'grade' => 'G1',
                 'race_location_id' => '7'
             ],
             [
                 'race_name' => '第67回ボートレースメモリアル',
-                'start_date' => '2021-08-24',
+                'race_date' => '2021-08-24',
                 'grade' => 'SG',
                 'race_location_id' => '7'
             ]

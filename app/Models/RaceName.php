@@ -13,6 +13,8 @@ class RaceName extends Model
     protected $primaryKey = 'race_name_id';
     protected $fillable = [
         'race_name',
+        'race_date',
+        'grade',
         'race_location_id',
     ];
 }
