@@ -73,8 +73,11 @@ Route::get('/heiwajima', [HeiwajimaController::class, 'index'])->name('heiwajima
 Route::get('/tamagawa', [TamagawaController::class, 'index'])->name('tamagawa.index');
 //浜名湖
 Route::get('/hamanako', [HamanakoController::class, 'index'])->name('hamanako.index');
-//蒲郡
-Route::get('/Gamagori', [GamagoriController::class, 'index'])->name('gamagori.index');
+/**蒲郡 */
+Route::prefix('/gamagori')->group(function () {
+    Route::get('', [GamagoriController::class, 'index'])->name('gamagori.index');
+    Route::get('/detail/{race_name_id}', [GamagoriController::class, 'detail'])->name('gamagori.detail');
+});
 //常滑
 Route::get('/tokoname', [TokonameController::class, 'index'])->name('tokoname.index');
 //津

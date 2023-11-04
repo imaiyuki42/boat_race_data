@@ -17,52 +17,26 @@ class RaceNameSeeder extends Seeder
         $racename_data = [
             [
                 'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
-                'race_date' => '2023-06-01',
+                'first_date' => '2023-06-01',
+                'second_date' => '2023-06-02',
+                'third_date' => '2023-06-03',
+                'fourth_date' => '2023-06-04',
+                'fifth_date' => '2023-06-05',
+                'sixth_date' => '2023-06-06',
                 'grade' => 'G1',
                 'race_location_id' => '7'
             ],
             [
-                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
-                'race_date' => '2023-06-02',
-                'grade' => 'G1',
-                'race_location_id' => '7'
-            ],
-            [
-                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
-                'race_date' => '2023-06-03',
-                'grade' => 'G1',
-                'race_location_id' => '7'
-            ],
-            [
-                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
-                'race_date' => '2023-06-04',
-                'grade' => 'G1',
-                'race_location_id' => '7'
-            ],
-            [
-                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
-                'race_date' => '2023-06-05',
-                'grade' => 'G1',
-                'race_location_id' => '7'
-            ],
-            [
-                'race_name' => 'オールジャパン竹島特別開設６８周年記念競走',
-                'race_date' => '2023-06-06',
-                'grade' => 'G1',
-                'race_location_id' => '7'
-            ],
-            [
-                'race_name' => 'オールジャパン竹島特別開設６７周年記念競走',
-                'race_date' => '2022-04-10',
-                'grade' => 'G1',
-                'race_location_id' => '7'
-            ],
-            [
-                'race_name' => '第67回ボートレースメモリアル',
-                'race_date' => '2021-08-24',
+                'race_name' => '第70回ボートレースダービー',
+                'first_date' => '2023-10-24',
+                'second_date' => '2023-10-25',
+                'third_date' => '2023-10-26',
+                'fourth_date' => '2023-10-27',
+                'fifth_date' => '2023-10-28',
+                'sixth_date' => '2023-10-29',
                 'grade' => 'SG',
                 'race_location_id' => '7'
-            ]
+            ],
         ];
 
         DB::table('race_names')->insert($racename_data);

@@ -1,7 +1,7 @@
 <div class="detail_gamagori">
     <h1>ボートレース蒲郡</h1>
     <div class="racename_gamagori">
-        <h2>{{ $all_japan_68y_anniversary->grade }} {{ $all_japan_68y_anniversary->race_date }} {{ $all_japan_68y_anniversary->race_name }}</h2>
+        <h2>{{ $race_name_info['grade'] }} {{ $race_name_info['event_date']['first_date'] }} {{ $race_name_info['race_name'] }}</h2>
         <div class="result_gamagori">
             <table>
                 <tr>
@@ -9,11 +9,11 @@
                     <th>3連単</th>
                     <th>2連単</th>
                 </tr>
-                @foreach ($race_data as $race_data)
+                @foreach ($race_results as $race_result)
                 <tr>
-                    <td>{{ $race_data->race_number }}</td>
-                    <td>{{ $race_data->trifecta_first }}{{ $race_data->trifecta_second }}{{ $race_data->trifecta_third }} {{ $race_data->trifecta_refund_price }}円 {{ $race_data->trifecta_rank }}番人気</td>
-                    <td>{{ $race_data->exacta_first }}{{ $race_data->exacta_second }} {{ $race_data->exacta_refund_price }}円 {{ $race_data->exacta_rank }}番人気</td>
+                    <td>{{ $race_result['first_date'][0]->race_number }}</td>
+                    <td>{{ $race_result['first_date'][0]->exacta_first }}{{ $race_result['first_date'][0]->trifecta_second }}{{ $race_result['first_date'][0]->trifecta_third }} {{ $race_result['first_date'][0]->trifecta_refund_price }}円 {{ $race_result['first_date'][0]->trifecta_rank }}番人気</td>
+                    <td>{{ $race_result['first_date'][0]->exacta_first }}{{ $race_result['first_date'][0]->exacta_second }} {{ $race_result['first_date'][0]->exacta_refund_price }}円 {{ $race_result['first_date'][0]->exacta_rank }}番人気</td>
                 </tr>
                 @endforeach
             </table>
